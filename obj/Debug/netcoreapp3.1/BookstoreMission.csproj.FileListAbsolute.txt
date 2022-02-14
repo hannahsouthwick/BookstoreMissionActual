@@ -1,0 +1,8 @@
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.csproj.AssemblyReference.cache
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.AssemblyInfoInputs.cache
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.AssemblyInfo.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.csproj.CoreCompileInputs.cache
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.MvcApplicationPartsAssemblyInfo.cache
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.RazorAssemblyInfo.cache
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.RazorAssemblyInfo.cs
