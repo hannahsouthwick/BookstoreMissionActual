@@ -12,60 +12,48 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using BookstoreMission.Models.ViewModels;
 
 namespace BookstoreMission.Controllers
 {
-    public class Startup
+    public class HomeController : Controller
     {
-        public IConfiguration Configuration { get; set; }
+        //private WaterProjectContext context { get; set; }
 
-        public Startup(IConfiguration temp)
+        //public HomeController (WaterProjectContext temp)
+        //{
+        //    context = temp;
+        //}
+
+        private IBookstoreRepository repo;
+
+        public HomeController(IBookstoreRepository temp)
         {
-            Configuration = temp;
+            repo = temp;
         }
 
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IActionResult Index(int pageNum = 1)
         {
-            // tells asp.net to use the controller views setup and use the MVC pattern
-            services.AddControllersWithViews();
-            services.AddDbContext<BookstoreContext>(options =>
+            int pageSize = 5;
 
+            var x = new BooksViewModel
             {
-                options.UseSqlite(Configuration["ConnectionStrings:BooksDBConnection"]);
-            });
+                Books = repo.Books
+                .OrderBy(p => p.Title)
+                .Skip((pageNum - 1) * pageSize)
+                .Take(pageSize),
 
-            services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
+                PageInfo = new PageInfo
+                {
+                    TotalNumBooks = repo.Books.Count(),
+                    BooksPerPage = pageSize,
+                    CurrentPage = pageNum
+                }
+            };
+
+            return View(x);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
-
-            //Corresponds to the wwroot
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
-        }
+        // public IActionResult Index() => View();
     }
 }
