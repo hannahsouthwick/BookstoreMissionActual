@@ -18,6 +18,7 @@ namespace BookstoreMission.Controllers
 {
     public class HomeController : Controller
     {
+        // respository
         private IBookstoreRepository repo;
 
         public HomeController(IBookstoreRepository temp)
@@ -29,6 +30,7 @@ namespace BookstoreMission.Controllers
         {
             int pageSize = 5;
 
+            // manages books per page
             var x = new BooksViewModel
             {
                 Books = repo.Books

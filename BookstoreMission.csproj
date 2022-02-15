@@ -8,6 +8,7 @@
     <None Remove="Models\" />
     <None Remove="Infrastructure\" />
     <None Remove="Models\ViewModels\" />
+    <None Remove="bootstrap" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -24,5 +25,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="bootstrap" Version="5.1.3" />
   </ItemGroup>
 </Project>
