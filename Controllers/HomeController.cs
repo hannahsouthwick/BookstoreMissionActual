@@ -18,13 +18,6 @@ namespace BookstoreMission.Controllers
 {
     public class HomeController : Controller
     {
-        //private WaterProjectContext context { get; set; }
-
-        //public HomeController (WaterProjectContext temp)
-        //{
-        //    context = temp;
-        //}
-
         private IBookstoreRepository repo;
 
         public HomeController(IBookstoreRepository temp)
@@ -53,7 +46,5 @@ namespace BookstoreMission.Controllers
 
             return View(x);
         }
-
-        // public IActionResult Index() => View();
     }
 }

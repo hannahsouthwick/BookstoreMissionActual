@@ -14,7 +14,7 @@ namespace BookstoreMission.Models.ViewModels
         public int TotalNumBooks { get; set; }
         public int BooksPerPage { get; set; }
         public int CurrentPage { get; set; }
-        // Figures out how many pages we need
+        // Figures out how many pages we need to have
         public int TotalPages => (int)Math.Ceiling((double)TotalNumBooks / BooksPerPage);
     }
 }

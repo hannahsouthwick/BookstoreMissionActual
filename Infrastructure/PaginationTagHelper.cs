@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Razor.Runtime.TagHelpers;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using BookstoreMission.Models.ViewModels;
 
-namespace WaterProject2.Infrastructure
+namespace BookstoreMission.Infrastructure
 {
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PaginationTagHelper : TagHelper
