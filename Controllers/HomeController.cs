@@ -5,14 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using BookstoreMission.Models;
+//using BookstoreMission.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-
 
 namespace BookstoreMission.Controllers
 {
@@ -31,11 +30,11 @@ namespace BookstoreMission.Controllers
         {
             // tells asp.net to use the controller views setup and use the MVC pattern
             services.AddControllersWithViews();
-            services.AddDbContext<BookstoreContext>(options =>
+            //services.AddDbContext<BookstoreContext>(options =>
 
-            {
-                options.UseSqlite(Configuration["ConnectionStrings:BooksDBConnection"]);
-            });
+            //{
+            //    options.UseSqlite(Configuration["ConnectionStrings:BooksDBConnection"]);
+            //});
 
             //services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
         }
