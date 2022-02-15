@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-//using BookstoreMission.Models;
+using BookstoreMission.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -30,13 +30,13 @@ namespace BookstoreMission.Controllers
         {
             // tells asp.net to use the controller views setup and use the MVC pattern
             services.AddControllersWithViews();
-            //services.AddDbContext<BookstoreContext>(options =>
+            services.AddDbContext<BookstoreContext>(options =>
 
-            //{
-            //    options.UseSqlite(Configuration["ConnectionStrings:BooksDBConnection"]);
-            //});
+            {
+                options.UseSqlite(Configuration["ConnectionStrings:BooksDBConnection"]);
+            });
 
-            //services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
+            services.AddScoped<IBookstoreRepository, EFBookstoreRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
