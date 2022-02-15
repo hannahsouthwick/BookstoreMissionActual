@@ -1198,11 +1198,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission2/BookstoreMission/BookstoreMission.csproj",
+      "projectUniqueName": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission.csproj",
       "projectName": "BookstoreMission",
-      "projectPath": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission2/BookstoreMission/BookstoreMission.csproj",
+      "projectPath": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/BookstoreMission.csproj",
       "packagesPath": "/Users/hannahsouthwick/.nuget/packages/",
-      "outputPath": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission2/BookstoreMission/obj/",
+      "outputPath": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hannahsouthwick/.config/NuGet/NuGet.Config"
