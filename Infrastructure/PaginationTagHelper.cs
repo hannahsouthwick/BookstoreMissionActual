@@ -62,9 +62,6 @@ namespace BookstoreMission.Infrastructure
                 tb.AddCssClass(PageClass);
                 tb.InnerHtml.Append(i.ToString());
 
-                tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i });
-                tb.InnerHtml.Append(i.ToString());
-
                 final.InnerHtml.AppendHtml(tb);
             }
 

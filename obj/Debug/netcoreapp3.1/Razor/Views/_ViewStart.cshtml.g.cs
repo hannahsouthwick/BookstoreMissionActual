@@ -28,13 +28,20 @@ using BookstoreMission.Models;
 #nullable disable
 #nullable restore
 #line 3 "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/Views/_ViewImports.cshtml"
+using BookstoreMission.Infrastructure;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/Views/_ViewImports.cshtml"
 using BookstoreMission.Models.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f400a24e4f1c1f8dbc87c0f761266a45e781e06b", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7eb53b146e6624d27b7389c2ffba26010014c79e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8372e33011d2860c4c2b158c7e6b99861034d62a", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
