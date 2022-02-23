@@ -6,12 +6,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using BookstoreMission.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
 using BookstoreMission.Models.ViewModels;
 
 namespace BookstoreMission.Controllers
@@ -26,7 +20,7 @@ namespace BookstoreMission.Controllers
             repo = temp;
         }
 
-        public IActionResult Index(int pageNum = 1)
+        public IActionResult Index(string bookCategory, int pageNum = 1)
         {
             int pageSize = 5;
 
@@ -34,13 +28,18 @@ namespace BookstoreMission.Controllers
             var x = new BooksViewModel
             {
                 Books = repo.Books
+                // searched with what ever link was passed in or if null
+                .Where(p => p.Category == bookCategory || bookCategory == null)
                 .OrderBy(p => p.Title)
                 .Skip((pageNum - 1) * pageSize)
                 .Take(pageSize),
 
                 PageInfo = new PageInfo
                 {
-                    TotalNumBooks = repo.Books.Count(),
+                    // making a decision for pagination
+                    TotalNumBooks = (bookCategory == null
+                        ? repo.Books.Count()
+                        : repo.Books.Where(x => x.Category == bookCategory).Count()),
                     BooksPerPage = pageSize,
                     CurrentPage = pageNum
                 }

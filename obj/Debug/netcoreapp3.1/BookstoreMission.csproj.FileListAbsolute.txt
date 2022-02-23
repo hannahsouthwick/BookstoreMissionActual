@@ -82,3 +82,9 @@
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.Views.pdb
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.csproj.CopyComplete
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/BookstoreMission.genruntimeconfig.cache
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/Checkout.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/_CheckoutLayout.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Types/Default.cshtml.g.cs

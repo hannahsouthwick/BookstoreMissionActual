@@ -32,6 +32,7 @@ namespace BookstoreMission.Infrastructure
         public PageInfo PageBlah { get; set; }
 
         public string PageAction { get; set; }
+
         public bool PageClassesEnabled { get; set; } = false;
         public string PageClass { get; set; }
         public string PageClassNormal { get; set; }
@@ -43,9 +44,12 @@ namespace BookstoreMission.Infrastructure
 
             TagBuilder final = new TagBuilder("div");
 
-            for (int i = 1; i < PageBlah.TotalPages; i++)
+            for (int i = 1; i <= PageBlah.TotalPages; i++)
             {
                 TagBuilder tb = new TagBuilder("a");
+
+                // connect page classes that were passed in
+                tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i });
 
                 // if statement for bootstrap implementation 
                 if (PageClassesEnabled)
@@ -54,6 +58,9 @@ namespace BookstoreMission.Infrastructure
                     tb.AddCssClass(i == PageBlah.CurrentPage
                         ? PageClassSelected : PageClassNormal);
                 }
+
+                tb.AddCssClass(PageClass);
+                tb.InnerHtml.Append(i.ToString());
 
                 tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i });
                 tb.InnerHtml.Append(i.ToString());

@@ -1,0 +1,38 @@
+﻿@{
+}
+
+@model Book
+@*add bootstrap badges*@
+<div class="card card-outline-primary m-1 p-1">
+    <div class="bg-light p-1">
+        <h3>@Model.Title</h3>
+            @*bootstrap here*@
+            <span class="badge badge-pill badge-primary" style="float:none">
+                @Model.Category
+            </span>
+        
+    </div>
+        <div class="card card-outline-primary m-1 p-1">
+            <div class="bg-faded p-1">
+                <ul>
+                    <li>Author Name: @Model.Author</li>
+                    <li>Publisher: @Model.Publisher</li>
+                    <li>Isbn: @Model.Isbn</li>
+                    <li>Classification: @Model.Classification</li>
+                    <li>Page Count: @Model.PageCount</li>
+                    <li>Price: $@Model.Price</li>
+                </ul>
+            </div>
+        </div>
+        <br />
+
+        <form method="post" asp-page="/Checkout">
+
+            <input type="hidden" asp-for="@Model.BookId" />
+            @*pass info that will retain the return url*@
+            <input type="hidden" name="returnURL" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+            <span class="card-text">
+                <button type="submit" class="btn btn-success btn-sm float-end">Add to Cart</button>
+            </span>
+        </form>
+    </div>
