@@ -33,7 +33,7 @@ namespace BookstoreMission.Pages
 
             // if cart session already exists, use that cart
             cart = HttpContext.Session.GetJson<Cart>("cart") ?? new Cart();
-            cart.AddItem(p, 1);
+            cart.AddItem(p, 1, p.Price);
 
             HttpContext.Session.SetJson("cart", cart);
 
