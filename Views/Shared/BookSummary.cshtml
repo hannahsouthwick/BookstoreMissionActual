@@ -29,7 +29,7 @@
         <form method="post" asp-page="/Checkout">
 
             <input type="hidden" asp-for="@Model.BookId" />
-            @*pass info that will retain the return url*@
+            @*pass info that will retain the return url to bring user back*@
             <input type="hidden" name="returnURL" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
             <span class="card-text">
                 <button type="submit" class="btn btn-success btn-sm float-end">Add to Cart</button>
