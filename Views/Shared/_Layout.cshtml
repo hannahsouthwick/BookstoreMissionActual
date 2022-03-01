@@ -7,13 +7,20 @@
     <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
     <header></header>
     <div class="container">
-        @*<main role="main" class="pb-3">*@
         <div class="bg-dark text-white p-2">
-            <span class="navbar-brand ml-2">BOOK STORE</span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col navbar-brand">BOOK STORE</div>
+                    <div class="col-6 text-right">
+                        <vc:cart-summary />
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row m-1 p-1">
 
@@ -23,16 +30,14 @@
 
             <div class="col-9">
 
-            <div class="container">
-                <main role="main" class="pb-3">
-                    @RenderBody()
-                </main>
-            </div>
+                <div class="container">
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                </div>
 
             </div>
         </div>
-
-        @*</main>*@
     </div>
 
     <footer class="border-top footer text-muted">

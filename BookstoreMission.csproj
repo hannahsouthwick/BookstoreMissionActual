@@ -14,6 +14,7 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\Types\" />
     <None Remove="Views\Purchase\" />
+    <None Remove="Views\Shared\Components\CartSummary\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -24,6 +25,7 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Types\" />
     <Folder Include="Views\Purchase\" />
+    <Folder Include="Views\Shared\Components\CartSummary\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.22">
