@@ -88,3 +88,5 @@
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Views/Shared/BookSummary.cshtml.g.cs
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Category/Default.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Views/Purchase/Order.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/Confirmation.cshtml.g.cs
