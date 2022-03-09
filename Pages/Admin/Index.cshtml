@@ -1,0 +1,23 @@
+﻿@page "/admin"
+@model BookstoreMission.Pages.Admin.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Bookstore Admin</title>
+    <link href="~/lib/css/bootstrap.min.css" rel="stylesheet" />
+    @*specifices the base URL and/or target for all relative URLs in a document*@
+    <base href="/" />
+</head>
+
+<body>
+    <component type="typeof(BookstoreMission.Pages.Admin.Routed)" render-mode="ServerPrerendered" />
+    <script src="/_framework/blazor.server.js"></script>
+
+</body>
+
+</html>
