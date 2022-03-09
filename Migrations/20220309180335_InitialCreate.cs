@@ -2,10 +2,29 @@
 
 namespace BookstoreMission.Migrations
 {
-    public partial class Initial : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Books",
+                columns: table => new
+                {
+                    BookID = table.Column<int>(nullable: false),
+                    Title = table.Column<string>(nullable: false),
+                    Author = table.Column<string>(nullable: false),
+                    Publisher = table.Column<string>(nullable: false),
+                    ISBN = table.Column<string>(nullable: false),
+                    Classification = table.Column<string>(nullable: false),
+                    Category = table.Column<string>(nullable: false),
+                    PageCount = table.Column<int>(nullable: false),
+                    Price = table.Column<double>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Books", x => x.BookID);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Purchases",
                 columns: table => new
@@ -19,7 +38,8 @@ namespace BookstoreMission.Migrations
                     City = table.Column<string>(nullable: false),
                     State = table.Column<string>(nullable: false),
                     Zip = table.Column<string>(nullable: true),
-                    Country = table.Column<string>(nullable: false)
+                    Country = table.Column<string>(nullable: false),
+                    PurchaseShipped = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {

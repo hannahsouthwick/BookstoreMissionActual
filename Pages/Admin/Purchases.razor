@@ -9,7 +9,7 @@
 <PurchaseTable TableTitle="Shipped Purchases" Purchases="ShippedPurchases"
                ButtonLabel="Reset" PurchaseSelected="ResetPurchase"></PurchaseTable>
 
-<button class="btn btn-info" @onclick="@(x=> UpdateData())">Refresh Data</button>
+<button class="btn btn-info" @onclick="@(x => UpdateData())">Refresh Data</button>
 
 @code {
     public IPurchaseRepository repo => Service;
