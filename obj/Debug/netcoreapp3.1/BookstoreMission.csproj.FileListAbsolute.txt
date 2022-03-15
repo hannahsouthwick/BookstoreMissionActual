@@ -111,3 +111,9 @@
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Routed.razor.g.cs
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/_Imports.razor.g.cs
 /Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Index.cshtml.g.cs
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs

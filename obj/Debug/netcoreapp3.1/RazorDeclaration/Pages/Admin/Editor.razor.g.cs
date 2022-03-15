@@ -63,7 +63,7 @@ using BookstoreMission.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 82 "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/Pages/Admin/Editor.razor"
+#line 76 "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/Pages/Admin/Editor.razor"
        
 
     [Parameter]
