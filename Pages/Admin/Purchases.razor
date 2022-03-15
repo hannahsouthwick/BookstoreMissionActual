@@ -1,6 +1,5 @@
 ﻿@page "/admin/purchases"
 @inherits OwningComponentBase<IPurchaseRepository>
-
 @*shows purchases that have not been shipped*@
 <PurchaseTable TableTitle="Unshipped Purchases" Purchases="UnshippedPurchases"
                ButtonLabel="Shipped" PurchaseSelected="ShipPurchase"></PurchaseTable>

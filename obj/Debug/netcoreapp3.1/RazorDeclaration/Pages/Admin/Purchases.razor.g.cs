@@ -62,7 +62,7 @@ using BookstoreMission.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/Pages/Admin/Purchases.razor"
+#line 13 "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/Pages/Admin/Purchases.razor"
        
     public IPurchaseRepository repo => Service;
 

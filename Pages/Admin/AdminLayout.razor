@@ -1,28 +1,29 @@
 ﻿@inherits LayoutComponentBase
 
 @*I added a logo here*@
-<div class="bg-info text-white p-2">
-    <div class="container-fluid">
-        <div class="col">
-            <a href="#" class="navbar-brand text-left">
-                <img src="https://bootstraplogos.com/wp-content/uploads/edd/2018/07/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2 ">
-            </a>
-        </div>
+@*I made this top part a navbar with a sticky top*@
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-dark justify-content-between">
 
-        <div class="container-fluid">
-
-            <div class="col">
-                <span class="navbar-brand m-lg-2">Bookstore Administration</span>
-            </div>
-
-            <div class="col-2 text-right">
-                <a class="btn tbn-sm btn-primary" href="/account/logout">Log Out</a>
-
-            </div>
-        </div>
+    <div class="navbar-brand">
+        <a href="#" class="ext-left">
+            <img src="https://bootstraplogos.com/wp-content/uploads/edd/2018/07/logo.png" width="45" alt="" class="d-inline-block align-middle mr-2 ">
+        </a>
     </div>
-</div>
 
+    <div class="nav-item">
+        <span class="navbar-brand m-lg-2 text-white p-2">Bookstore Administration</span>
+    </div>
+
+    <div class="navbar-nav">
+
+        <span class="nav-item">
+            <a class="btn btn-sm btn-outline-secondary" href="/account/logout">Log Out</a>
+
+        </span>
+    </div>
+
+</nav>
+<br /><br /><br />
 
     <div class="container-fluid">
 
