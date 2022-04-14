@@ -1682,7 +1682,7 @@
       "outputPath": "/Users/hannahsouthwick/Documents/GitHub/BookstoreMission/BookstoreMission/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/hannahsouthwick/.nuget/NuGet/NuGet.Config"
+        "/Users/hannahsouthwick/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
